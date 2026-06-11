@@ -15,7 +15,7 @@ const PROJECTS = [
     tech: ['Angular', 'Micro Frontends', '.NET', 'Microservices', 'Kafka', 'QuickBooks', 'PostgreSQL'],
     icon: '🏠',
     banner: 'linear-gradient(135deg, #1a0533 0%, #2d0b5e 40%, #8B5CF6 100%)',
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: 'https://inspectormatch.com',
   },
   {
@@ -25,7 +25,7 @@ const PROJECTS = [
     tech: ['Angular', 'TypeScript', '.NET', 'gRPC', 'QuickBooks API', 'Stripe', 'PostgreSQL'],
     icon: '📋',
     banner: 'linear-gradient(135deg, #0a0f2e 0%, #1a2060 40%, #4158D0 100%)',
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: 'https://inspectiondepot.com',
   },
   {
@@ -35,75 +35,45 @@ const PROJECTS = [
     tech: ['Angular', 'TypeScript', '.NET', 'Kafka', 'gRPC', 'PostgreSQL'],
     icon: '🚁',
     banner: 'linear-gradient(135deg, #0d1b2a 0%, #1b2838 40%, #00B4D8 100%)',
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: '#',
   },
   {
     id: 'razorpay',
     title: 'Razorpay Integration',
     desc: 'Full-stack payment gateway integration supporting subscriptions, one-time payments, webhooks, and real-time payment status tracking with .NET backend and Angular UI.',
-    tech: ['Angular', '.NET', 'C#', 'Stripe', 'Razorpay SDK', 'PostgreSQL', 'REST APIs'],
+    tech: ['Angular', '.NET', 'C#', 'Razorpay SDK', 'PostgreSQL', 'REST APIs'],
     icon: '💳',
     banner: 'linear-gradient(135deg, #0e0e1a 0%, #1c1c40 40%, #3B82F6 100%)',
-    github: 'https://github.com/ananthakumar',
+    github: 'https://github.com/paul-ananth/payment_razorpay',
+    demo: 'https://raw.githack.com/paul-ananth/payment_razorpay/main/index.html',
+  },
+  {
+    id: 'grpc',
+    title: 'gRPC Microservices',
+    desc: 'ASP.NET Core microservice communication using gRPC and Protocol Buffers. Demonstrates a high-performance client-server architecture with auto-generated strongly-typed contracts.',
+    tech: ['ASP.NET Core', 'C#', 'gRPC', 'Protocol Buffers', 'HTTP/2', 'Microservices'],
+    icon: '⚡',
+    banner: 'linear-gradient(135deg, #060b20 0%, #0f1f5c 40%, #2563EB 100%)',
+    github: 'https://github.com/paul-ananth/GRPC',
     demo: '#',
   },
 ];
 
 const REPOS = [
   {
-    name: 'angular-microfrontend-starter',
-    desc: 'Module Federation boilerplate for Angular Micro Frontend architecture with shared state management and dynamic remote loading.',
-    lang: 'TypeScript',
-    langColor: '#3178C6',
-    stars: 24,
-    forks: 8,
-    url: 'https://github.com/ananthakumar',
-  },
-  {
-    name: 'dotnet-microservices-template',
-    desc: 'Production-ready .NET 8 microservices template with Kafka event bus, gRPC inter-service communication, and clean architecture patterns.',
+    name: 'GRPC',
+    desc: 'gRPC communication between ASP.NET Core Web API services using Protocol Buffers, client-server architecture, and high-performance remote procedure calls.',
     lang: 'C#',
     langColor: '#512BD4',
-    stars: 18,
-    forks: 5,
-    url: 'https://github.com/ananthakumar',
+    url: 'https://github.com/paul-ananth/GRPC',
   },
   {
-    name: 'kafka-dotnet-consumer',
-    desc: 'Reusable Apache Kafka consumer library for .NET with retry policies, dead-letter queuing, and structured logging built in.',
-    lang: 'C#',
-    langColor: '#512BD4',
-    stars: 12,
-    forks: 3,
-    url: 'https://github.com/ananthakumar',
-  },
-  {
-    name: 'grpc-angular-bridge',
-    desc: 'Angular service layer library for seamless gRPC-Web communication with automatic type generation from .proto files.',
-    lang: 'TypeScript',
-    langColor: '#3178C6',
-    stars: 9,
-    forks: 2,
-    url: 'https://github.com/ananthakumar',
-  },
-  {
-    name: 'postgres-dapper-extensions',
-    desc: 'Dapper extensions for PostgreSQL featuring bulk operations, paginated queries, and strongly-typed query builders.',
-    lang: 'C#',
-    langColor: '#512BD4',
-    stars: 7,
-    forks: 1,
-    url: 'https://github.com/ananthakumar',
-  },
-  {
-    name: 'quickbooks-dotnet-sdk-wrapper',
-    desc: 'Simplified wrapper around the QuickBooks Online API for .NET with OAuth2 flow, token refresh, and common financial operations.',
-    lang: 'C#',
-    langColor: '#512BD4',
-    stars: 5,
-    forks: 2,
-    url: 'https://github.com/ananthakumar',
+    name: 'payment_razorpay',
+    desc: 'Full-stack Razorpay payment gateway integration with subscription flows, webhook processing, and real-time payment status tracking.',
+    lang: 'CSS',
+    langColor: '#563d7c',
+    url: 'https://github.com/paul-ananth/payment_razorpay',
   },
 ];
 
@@ -130,7 +100,7 @@ const PROJECT_PAGES = {
       { label: 'Inspector View', bg: 'linear-gradient(135deg, #2d0b5e, #6D28D9)' },
       { label: 'Reports', bg: 'linear-gradient(135deg, #1a033e, #8B5CF6)' },
     ],
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: 'https://inspectormatch.com',
   },
   inspectiondepot: {
@@ -155,7 +125,7 @@ const PROJECT_PAGES = {
       { label: 'Order Management', bg: 'linear-gradient(135deg, #1a2060, #2563EB)' },
       { label: 'Financials', bg: 'linear-gradient(135deg, #0a0f2e, #4158D0)' },
     ],
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: 'https://inspectiondepot.com',
   },
   dronesnap: {
@@ -180,7 +150,7 @@ const PROJECT_PAGES = {
       { label: 'Image Gallery', bg: 'linear-gradient(135deg, #0a3d62, #00B4D8)' },
       { label: 'Report View', bg: 'linear-gradient(135deg, #0d1b2a, #48CAE4)' },
     ],
-    github: 'https://github.com/ananthakumar',
+    github: null,
     demo: '#',
   },
   razorpay: {
@@ -199,13 +169,38 @@ const PROJECT_PAGES = {
       'Comprehensive audit log',
       'Refund and dispute management',
     ],
-    tech: ['Angular 17', 'TypeScript', '.NET 8', 'C#', 'Stripe SDK', 'Razorpay SDK', 'PostgreSQL', 'Dapper', 'REST APIs', 'HMAC Security'],
+    tech: ['Angular 17', 'TypeScript', '.NET 8', 'C#', 'Razorpay SDK', 'PostgreSQL', 'Dapper', 'REST APIs', 'HMAC Security'],
     screenshots: [
       { label: 'Payment Page', bg: 'linear-gradient(135deg, #0e0e1a, #1e1e4a)' },
       { label: 'Subscriptions', bg: 'linear-gradient(135deg, #1e1e4a, #3B82F6)' },
       { label: 'Transaction Log', bg: 'linear-gradient(135deg, #0e0e1a, #60A5FA)' },
     ],
-    github: 'https://github.com/ananthakumar',
+    github: 'https://github.com/paul-ananth/payment_razorpay',
+    demo: 'https://raw.githack.com/paul-ananth/payment_razorpay/main/index.html',
+  },
+  grpc: {
+    title: 'gRPC Microservices',
+    tagline: '// grpc · protocol-buffers · http2 · microservices',
+    icon: '⚡',
+    banner: 'linear-gradient(135deg, #060b20 0%, #0f1f5c 45%, #1a3a9e 75%, #2563EB 100%)',
+    desc: 'A clean gRPC communication layer between two ASP.NET Core 8 microservices — OrderService and UserService — using Protocol Buffers as the contract. Demonstrates how to replace REST with binary HTTP/2 calls for faster, strongly-typed inter-service communication.',
+    features: [
+      'Contract-first development with .proto files',
+      'Auto-generated C# client stubs and server base classes',
+      'HTTP/2 multiplexing for concurrent requests',
+      'Binary Protobuf serialization — smaller payloads than JSON',
+      'Singleton GrpcChannel for connection reuse',
+      'OrderService (REST API + gRPC client)',
+      'UserService (gRPC server)',
+      'Clean dependency injection wiring',
+    ],
+    tech: ['ASP.NET Core 8', 'C#', 'gRPC', 'Protocol Buffers (Proto3)', 'HTTP/2', 'Dependency Injection', 'Microservices'],
+    screenshots: [
+      { label: 'OrderService API', bg: 'linear-gradient(135deg, #060b20, #0f1f5c)' },
+      { label: 'Proto Contract', bg: 'linear-gradient(135deg, #0f1f5c, #2563EB)' },
+      { label: 'UserService gRPC', bg: 'linear-gradient(135deg, #060b20, #1a3a9e)' },
+    ],
+    github: 'https://github.com/paul-ananth/GRPC',
     demo: '#',
   },
 };
@@ -581,10 +576,13 @@ function renderProjects() {
         <p class="proj-desc">${p.desc}</p>
         <div class="proj-tech">${p.tech.map(t => `<span>${t}</span>`).join('')}</div>
         <div class="proj-actions">
-          <a href="${p.github}" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-gh" onclick="event.stopPropagation()" aria-label="GitHub Repository for ${p.title}">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
+          ${p.github
+            ? `<a href="${p.github}" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-gh" onclick="event.stopPropagation()" aria-label="GitHub Repository for ${p.title}">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                GitHub
+               </a>`
+            : ''
+          }
           ${p.demo && p.demo !== '#'
             ? `<a href="${p.demo}" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-demo" onclick="event.stopPropagation()" aria-label="Live Demo for ${p.title}">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
@@ -632,14 +630,6 @@ function renderRepos() {
         <span class="repo-lang">
           <span class="repo-lang-dot" style="background:${r.langColor}" aria-hidden="true"></span>
           ${r.lang}
-        </span>
-        <span class="repo-stat" aria-label="${r.stars} stars">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-          ${r.stars}
-        </span>
-        <span class="repo-stat" aria-label="${r.forks} forks">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="6" y1="3" x2="6" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
-          ${r.forks}
         </span>
       </div>
     </a>
@@ -701,6 +691,13 @@ function buildOverlayHTML(data) {
        </a>`
     : '';
 
+  const githubBtn = data.github
+    ? `<a href="${data.github}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+        GitHub Repository
+       </a>`
+    : '';
+
   return `
     <div class="ov-hero" style="background:${data.banner || 'var(--bg3)'}">
       <div class="ov-hero-icon">${data.icon}</div>
@@ -720,16 +717,10 @@ function buildOverlayHTML(data) {
         <p class="ov-section-title">// Tech Stack</p>
         <div class="ov-tech-list">${data.tech.map(t => `<span class="ov-tech">${t}</span>`).join('')}</div>
       </div>
-      <div class="ov-section">
-        <p class="ov-section-title">// Screenshots</p>
-        <div class="ov-screenshots">${screenshots}</div>
-      </div>
+      
     </div>
     <div class="ov-actions">
-      <a href="${data.github}" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-        GitHub Repository
-      </a>
+      ${githubBtn}
       ${demoBtn}
     </div>
   `;

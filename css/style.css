@@ -1231,6 +1231,8 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; fo
   transform-style: preserve-3d;
   position: relative;
   animation: cardReveal 0.6s var(--ease-out) both;
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes cardReveal {
@@ -1268,7 +1270,7 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; fo
   filter: drop-shadow(0 4px 24px rgba(0,0,0,0.3));
 }
 
-.proj-body { padding: 24px; }
+.proj-body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
 
 .proj-title {
   font-size: 19px;
@@ -1301,7 +1303,9 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; fo
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  flex: 1;
+  align-content: flex-start;
 }
 
 .proj-tech span {
@@ -1323,6 +1327,7 @@ h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; line-height: 1.15; fo
 .proj-actions {
   display: flex;
   gap: 10px;
+  margin-top: auto;
 }
 
 .proj-btn {
